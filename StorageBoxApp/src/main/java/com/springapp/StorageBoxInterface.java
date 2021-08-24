@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface StorageBoxInterface {
-        List<StorageBoxes> findAll();
+        List<StorageBoxes> findAll(); //Note our findAll returns a List, not an Iterable
 
         void save(StorageBoxes be);
 

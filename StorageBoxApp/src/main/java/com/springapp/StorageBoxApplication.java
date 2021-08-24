@@ -23,7 +23,7 @@ public class StorageBoxApplication {
 		//StringBuffer sb=new StringBuffer();
 		//sb.append("Returned "+allRows.size()+" rows\n");
 		//allRows.forEach(BoxEntry -> sb.append(BoxEntry.toString()+"\n"));
-		return allRows;
+		return allRows; //Spring automatically will translate this POJO to JSON when it returns
 	}
 	@PostMapping("/post")
 	public ModelAndView uploadFile(@RequestParam("file") MultipartFile file,
@@ -58,6 +58,7 @@ public class StorageBoxApplication {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		//after item is saved, redirect to service to display MySQL table contents
 		return new ModelAndView("redirect:/listdb");
 	}
 	public static void main(String[] args) {

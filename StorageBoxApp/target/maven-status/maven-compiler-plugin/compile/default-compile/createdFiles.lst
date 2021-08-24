@@ -1,0 +1,7 @@
+com/springapp/StorageBoxes.class
+com/springapp/StorageBoxApplication.class
+com/springapp/StorageBoxService.class
+com/springapp/StorageBoxRepository.class
+com/springapp/StorageBoxInterface.class
+com/springapp/CountResult.class
+com/springapp/StorageBoxConstants.class
